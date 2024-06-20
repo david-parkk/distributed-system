@@ -54,7 +54,7 @@ def merge_excel_files(input_directory, output_file):
         print("No valid dataframes to merge.")
 
 # 실행 예시
-input_directory = '../엑셀 분할/result2'  # 여러 엑셀 파일이 있는 디렉토리 경로
+input_directory = '../divide/result2'  # 여러 엑셀 파일이 있는 디렉토리 경로
 output_file = 'merged_file.xlsx'  # 병합된 결과를 저장할 엑셀 파일 경로
 
 merge_excel_files(input_directory, output_file)

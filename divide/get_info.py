@@ -1,6 +1,6 @@
 import pandas as pd
 
-import parsing공시자료.parsing공시자료
+import parsing.parsing공시자료
 
 def main(input_excel_path,output_excel_path):
     crtfc_key = '15719e13918826eeafa58e56db3afde7c3418a7d'
@@ -23,7 +23,7 @@ def main(input_excel_path,output_excel_path):
 
         print(f"Processing {rcept_no}...")
 
-        result = parsing공시자료.parsing공시자료.download_and_extract_data(crtfc_key, rcept_no)
+        result = parsing.parsing공시자료.download_and_extract_data(crtfc_key, rcept_no)
         print("result = ", result);
         if(result=='fail'):
 
@@ -42,5 +42,5 @@ if __name__ == "__main__":
         input_path = f'./divide/split_part_{i}.xlsx'
         output_path = f'result2/output{i}.xlsx'
         main(input_path, output_path)
-#parsing공시자료.parsing공시자료.extract_cash_flow_data("./divide/split_part_1")
+#parsing.parsing.extract_cash_flow_data("./divide/split_part_1")
 
